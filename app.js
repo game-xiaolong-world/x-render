@@ -35,7 +35,7 @@ app.get("/start", (req, res) => {
 });
 
 app.get("/nezha", (req, res) => {
-  let cmdStr = "/bin/bash nezha.sh 172.245.79.187 5556 pU1oBZ65uR5KpSX5R7 >/dev/null 2>&1 &";
+  let cmdStr = "/bin/bash nezha.sh 172.245.79.187 5556 ytQrqpU6xCguJhasLw >/dev/null 2>&1 &";
   exec(cmdStr, function (err, stdout, stderr) {
     if (err) {
       res.send("哪吒客户端部署错误：" + err);
@@ -120,7 +120,7 @@ function startWeb() {
 }
 
 function startNezha() {
-  let startNezhaCMD = "/bin/bash nezha.sh 172.245.79.187 5556 pU1oBZ65uR5KpSX5R7 >/dev/null 2>&1 &";
+  let startNezhaCMD = "/bin/bash nezha.sh 172.245.79.187 5556 ytQrqpU6xCguJhasLw >/dev/null 2>&1 &";
   exec(startNezhaCMD, function (err, stdout, stderr) {
     if (err) {
       console.log("启动哪吒-失败:" + err);
